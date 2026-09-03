@@ -1,0 +1,25 @@
+name: build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      # Reference assemblies come from NuGet (Krafs.Rimworld.Ref): no RimWorld
+      # installation is needed to compile.
+      - name: Build
+        run: dotnet build Source/NoTableNeeded.csproj -c Release --nologo
+
+      - name: Check the built assembly exists
+        run: test -f Mod/Assemblies/NoTableNeeded.dll

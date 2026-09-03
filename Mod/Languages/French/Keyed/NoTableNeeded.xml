@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <NoTableNeeded.Settings.NotScanned>Le relevé des aliments n'a pas encore eu lieu. Relancez RimWorld avec No Table Needed actif.</NoTableNeeded.Settings.NotScanned>
+
+  <NoTableNeeded.Settings.Summary>{0} aliments sur {1} ne réclament plus de table.
+
+Tout le reste — repas simples, fins et somptueux, pâte nutritive, nourriture pour bébé — est inchangé, et le manger par terre coûte toujours de l'humeur.</NoTableNeeded.Settings.Summary>
+
+  <NoTableNeeded.Settings.NotAMeal>Ce qui n'est pas un repas</NoTableNeeded.Settings.NotAMeal>
+  <NoTableNeeded.Settings.NotAMealTip>Tout ce que le jeu classe sous le repas exécrable : récoltes crues, œufs, poisson, lait, chocolat, ambroisie, croquettes, viande crue. Le jeu refuse déjà de les traiter comme des repas partout ailleurs — celui qui en mange écope de « a mangé de la nourriture crue » et sait très bien que ce n'était pas un dîner.</NoTableNeeded.Settings.NotAMealTip>
+
+  <NoTableNeeded.Settings.PreservedRations>Rations de conserve</NoTableNeeded.Settings.PreservedRations>
+  <NoTableNeeded.Settings.PreservedRationsTip>Les repas qui tiennent {0} jours ou plus, ou qui ne pourrissent jamais : pemmican, rations de survie, gelée d'insecte. Se conserver est toute leur raison d'être, et ce qu'ils attendent, c'est d'être mangés loin de chez soi. Les repas cuisinés pourrissent en 4 jours et ne sont pas concernés.</NoTableNeeded.Settings.PreservedRationsTip>
+
+  <NoTableNeeded.Settings.WhenHungry>La faim excuse le repas</NoTableNeeded.Settings.WhenHungry>
+  <NoTableNeeded.Settings.WhenHungryTip>Un pion qui n'a pas mangé depuis bien trop longtemps ne fait pas de remarque sur le mobilier. Passé le seuil ci-dessous, la pénalité saute quel qu'ait été le repas, somptueux compris. La faim est lue à la fin du repas mais avant qu'il soit avalé : c'est donc celle avec laquelle le pion est arrivé.</NoTableNeeded.Settings.WhenHungryTip>
+
+  <NoTableNeeded.Settings.HungerThreshold>Excusé à partir de</NoTableNeeded.Settings.HungerThreshold>
+  <NoTableNeeded.Settings.HungerThresholdTip>« Affamé » est le réglage conseillé. Les pions partent chercher à manger dès qu'ils ont faim : excuser dès « a faim » supprimerait la pénalité à presque tous les repas, alors qu'à partir d'« affamé » seuls les repas arrivés trop tard sont excusés — caravanes, sièges, disette, prisonnier négligé. « Meurt de faim » est plus strict encore.</NoTableNeeded.Settings.HungerThresholdTip>
+
+  <NoTableNeeded.Hunger.UrgentlyHungry>affamé</NoTableNeeded.Hunger.UrgentlyHungry>
+  <NoTableNeeded.Hunger.Starving>meurt de faim</NoTableNeeded.Hunger.Starving>
+
+  <NoTableNeeded.Settings.Search>Rechercher…</NoTableNeeded.Settings.Search>
+  <NoTableNeeded.Settings.Reset>Réinitialiser</NoTableNeeded.Settings.Reset>
+  <NoTableNeeded.Settings.NoMatch>Aucun aliment ne correspond.</NoTableNeeded.Settings.NoMatch>
+
+  <NoTableNeeded.Settings.RowTip>{0}\nVient de : {1}\nPréférence : {2}</NoTableNeeded.Settings.RowTip>
+
+  <NoTableNeeded.Family.NotAMeal>pas un repas</NoTableNeeded.Family.NotAMeal>
+  <NoTableNeeded.Family.PreservedRation>ration de conserve</NoTableNeeded.Family.PreservedRation>
+
+</LanguageData>

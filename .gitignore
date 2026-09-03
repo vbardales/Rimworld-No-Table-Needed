@@ -1,0 +1,19 @@
+# Build intermediates.
+# Directory.Build.props sends them outside the mod folder: they must never end up back inside it,
+# the whole folder being shipped to the Workshop as-is.
+.build/
+Source/obj/
+Source/bin/
+
+# Development environments
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.csproj.user
+
+# System
+Thumbs.db
+desktop.ini
+.DS_Store

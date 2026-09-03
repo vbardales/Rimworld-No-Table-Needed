@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>No Table Needed</name>
+  <author>nelim</author>
+  <packageId>nelim.notableneeded</packageId>
+  <url>https://github.com/vbardales/Rimworld-No-Table-Needed</url>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <description>Colonists stop resenting a handful of berries eaten standing up.
+
+Every ingestible in the game carries a tableDesired flag, and everything except beer has it set to true. Eat without a table surface in front of you and you get "ate without table", -3 mood for a day — the same penalty for a lavish meal served on the floor and for one strawberry picked in the field.
+
+WHAT THE FOOD IS
+
+Two families of food stop asking for a table:
+
+- Not a meal — anything the game already ranks below a terrible meal: raw produce, eggs, fish, milk, chocolate, ambrosia, kibble, raw meat. Corpses are deliberately left alone.
+- Preserved rations — meals built to travel, recognised by how long they keep (20 days or more, or no rotting at all): pemmican, packaged survival meals, insect jelly.
+
+Everything else still wants a table. Simple, fine and lavish meals, nutrient paste and baby food are unchanged, and a colonist eating one off the ground is still unhappy about it.
+
+The rule reads only vanilla fields — preferability, and rotting time from CompRottable. Food added by other mods is classified by the same measure, with no per-mod compatibility patch to write or maintain. Raw meat is covered too, and that is one reason this mod ships an assembly: meat defs are generated in code at load time, one per animal, out of reach of any XML patch.
+
+HOW HUNGRY THEY ARE
+
+A colonist who has not eaten in far too long does not complain about the furniture. Past urgently hungry — and, if you prefer, only once starving — the penalty is skipped whatever the food was, lavish meal included.
+
+That state is read at the moment the meal is finished but before it is swallowed, so it is the hunger the colonist actually walked in with, not the one they leave with. Urgently hungry is deliberately not the ordinary case: colonists start looking for food while merely hungry, so this only forgives the meals that came too late — caravans, sieges, famine, a neglected prisoner.
+
+SETTINGS
+
+One toggle per food family, over a searchable list of every food the mod touches, each with its own override; one toggle for hunger, with the threshold. Turning a food off restores the value it had before the mod loaded, so a decision made by another mod is never overwritten.
+
+No save data. Can be added to or removed from an ongoing game, and load order does not matter.
+
+Credit where it is due: the idea of sparing non-meals comes from Cozarkian's Tables Are For Meals, for RimWorld 1.2. This is an independent implementation, not a port — tableDesired did not exist in 1.2, and the original had to reach the same result through chairSearchRadius and a Harmony patch to undo the side effect.</description>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+      <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+    <li>Ludeon.RimWorld</li>
+    <li>Ludeon.RimWorld.Royalty</li>
+    <li>Ludeon.RimWorld.Ideology</li>
+    <li>Ludeon.RimWorld.Biotech</li>
+    <li>Ludeon.RimWorld.Anomaly</li>
+    <li>Ludeon.RimWorld.Odyssey</li>
+  </loadAfter>
+  <!-- Nothing to declare for food mods: the classification happens in a
+       StaticConstructorOnStartup, hence after ALL defs, including the implied ones generated
+       in C#, are in the database. Load order makes no difference. -->
+</ModMetaData>
